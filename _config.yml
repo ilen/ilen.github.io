@@ -12,6 +12,7 @@ state: CA
 zip_code: 
 country: United States of America
 phone: 
+exclude: template;
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
