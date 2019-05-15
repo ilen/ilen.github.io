@@ -1,7 +1,7 @@
 <section id="one" class="tiles">
     {% if site.tiles-source == 'pages' %}
 
-    {% assign tile_pages = site.pages | where_exp: "page","page.show_tile != false" %}
+    {% assign tile_pages = site.pages | where_exp: "page","page.show_tile > 0" %}
     {% assign sorted_pages = tile_pages | sort: "show_tile" %}
     {% for page in sorted_pages limit:site.tiles-count %}
     

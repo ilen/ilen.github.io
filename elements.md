@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Elements
-show_tile: false
 nav-menu: false
 ---
 
