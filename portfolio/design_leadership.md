@@ -25,8 +25,8 @@ portfolio: 1
             <div class="1u 12u$(small)">&nbsp;</div>
             <div class="3u 12u$(small)">
                 <span class="image fit">
-                <a href="/assets/images/DL_Boothcollateral.png" title="Booth collateral SPI 2014">
-                <img src="/assets/images/DL_Boothcollateral.png"></a>
+                <a href="/assets/images/DL_BoothCollateral.png" title="Booth collateral SPI 2014">
+                <img src="/assets/images/DL_BoothCollateral.png"></a>
                     <span class="caption">Detail from initial brochure  2014, app mock in top right</span>
                 </span>
             </div>
