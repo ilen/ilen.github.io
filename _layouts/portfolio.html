@@ -16,103 +16,32 @@
 <div id="main" class="alt">
 
 <!-- One -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h1>{{ page.title }}</h1>
-		</header>
-		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
-		<p>{{ content }}</p>
-        </div>
-</section>
-    
-<!-- Two -->
 
-<section id="two">
-    <div class="inner">
+<section id="one">
+<div class="inner">
+<div class="row">
 {% assign portfolio_pages = site.pages | where_exp: "page","page.portfolio > 0" %}
     {% assign sorted_pages = portfolio_pages | sort: "show_tile" %}
     {% for page in sorted_pages limit:site.tiles-count %}  
-    
-        <p><span class="image left"><img src="{{ site.baseurl }}/{{ page.image }}" alt=""></span> <h3> <a  href="{{page.url}}">{{page.title}}</a></h3><p>{{page.description}}
-    </p>
-        
-        
-                <section id="banner" class="">
-            <div class="inner">
-                <span class="image">
-                    <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
-                </span>
-                <header class="major">
-
-                    <h1>{{ page.title }}</h1>
-
-                </header>
-            </div>
-        </section>
- {% endfor %}
+        <div class="4u 12u$(small)">
+            <span class="image fit">
+                <a  href="{{page.url}}">
+                <h3> {{page.title}}</h3>
+                <img src="{{ page.image }}" alt=""></a>
+                <span class="">
+                      
+            <p>{{page.description}}</p></span>
+            </span>
         </div>
-</section>
-    
-<!-- Two
-      <section id="two">
-	<div class="inner">
-          {% for post in site.posts %}
-	  {% if post.title != 404 %}
-	  <header class="major">
-	    <h1>{{ post.title }}</h1>
-	  </header>
-	  {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-	  {% if post.date %}<p>{{ post.date }}</p>{% endif %}
-	  <p>{{ post.content }}</p>
-	  {% endif %}
-          {% endfor %}
-	</div>
-      </section> -->
 
-<!-- Two -->    
-<section id="two" class="">
-<div class = "inner">    
-<div class="content">
-    {% for post in site.posts %} 
-        {% if post.title != 404 %}
-    
-
-	<div class="6u 12u$(small)">
-		<h3>{{ post.title }}</h3>
-		<p>{{post.description}}</p>
-	</div>
-        {% endif %}
-      {% endfor %}
-	</div>   
-</div>
-    </section>
-    <!--
-    <section>
-
-		<div class="content">
-			<div class="inner">
-				<header class="major">
-					<h3>Rhoncus magna</h3>
-				</header>
-				<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</div>
-        </section>
-
-        
-	</section>
-    
--->    
-
- 
+ {% endfor %}
     </div>
-
+		<!-- Break -->    
+    </div>
+</section>
+      </div>    
     {% include footer.html %}
 
-  </body>
+    </body>
 
 </html>
