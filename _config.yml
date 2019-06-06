@@ -3,7 +3,7 @@ title: Ilen Zazueta-Hall
 subtitle: Product + UX Leader
 email: ilen@ilen.info
 description: Ilen Zazueta-Hall 
-baseurl: "/ilen.github.io" # the subpath of your site, e.g. /blog
+baseurl: # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
 street_address: 
