@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Moving Fast
-description: Experience focused Hackathon entry for the win!
+description: Prototyping an experience-focused hackathon entry for the win!
 image: assets/images/suncode_retrokitlogo.png
 portfolio: 3
 ---
