@@ -24,13 +24,12 @@
     {% assign sorted_pages = portfolio_pages | sort: "show_tile" %}
     {% for page in sorted_pages limit:site.tiles-count %}  
         <div class="4u 12u$(small)">
-            <span class="image fit">
+            <span class="image fit" style="padding:2em;">
                 <a  href="{{page.url}}">
                 <h3> {{page.title}}</h3>
                 <img src="{{ page.image }}" alt=""></a>
-                <span class="">
-                      
-            <p>{{page.description}}</p></span>
+                <span class="">       
+            <p style="padding-top:1em;">{{page.description}}</p></span>
             </span>
         </div>
 
